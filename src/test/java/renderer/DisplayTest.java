@@ -16,6 +16,8 @@ public class DisplayTest {
 
         long window = display.getWindow();
 
+
+
         while (!glfwWindowShouldClose(window)) {
             // basically don't close the app
         }
