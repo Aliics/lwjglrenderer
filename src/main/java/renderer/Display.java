@@ -1,9 +1,12 @@
 package renderer;
 
 import org.lwjgl.glfw.GLFWVidMode;
-import org.lwjgl.opengl.GL;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.lwjgl.glfw.GLFW.*;
+import static org.lwjgl.opengl.GL.createCapabilities;
 import static org.lwjgl.opengl.GL11.*;
 
 public class Display {
@@ -14,15 +17,20 @@ public class Display {
     private int height = 480;
     private int resizable = GL_TRUE;
     private int visible = GL_TRUE;
+    private List<VBORender> vboRenders;
+
+    private Thread loopThread;
 
     public Display() {
         paint();
 
-        new Thread(this::loop).start();
+        loopThread = new Thread(this::loop);
     }
 
     private void paint() {
         if (!glfwInit()) return;
+
+        vboRenders = new ArrayList<>();
 
         glfwDestroyWindow(window);
 
@@ -48,16 +56,26 @@ public class Display {
     private void loop() {
         glfwMakeContextCurrent(window);
 
-        GL.createCapabilities();
+        createCapabilities();
 
         glClearColor(0.19f, 0.03f, 0.15f, 0f);
 
         while (!glfwWindowShouldClose(window)) {
             glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 
+            glLoadIdentity();
+
+            for (VBORender vboRender : vboRenders) {
+                vboRender.draw();
+            }
+
             glfwSwapBuffers(window);
 
             glfwPollEvents();
+        }
+
+        for (VBORender vboRender : vboRenders) {
+            vboRender.cleanup();
         }
 
         glfwTerminate();
@@ -127,5 +145,17 @@ public class Display {
         this.visible = visible;
 
         paint();
+    }
+
+    public List<VBORender> getVboRenders() {
+        return vboRenders;
+    }
+
+    public void addVboRender(VBORender vboRender) {
+        vboRenders.add(vboRender);
+    }
+
+    public Thread getLoopThread() {
+        return loopThread;
     }
 }
