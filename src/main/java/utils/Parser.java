@@ -36,8 +36,8 @@ public class Parser {
             vertices = new float[verticesList.size() * 3];
 
             int currentVertex = 0;
-            for (int i = 0; i < verticesList.size(); i++) {
-                String[] splitVertices = verticesList.get(i).split("\\s");
+            for (String verticeString : verticesList) {
+                String[] splitVertices = verticeString.split("\\s");
 
                 for (int v = 1; v < splitVertices.length; v++) {
                     vertices[currentVertex] = Float.valueOf(splitVertices[v]);
