@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.lwjgl.glfw.GLFW.*;
-import static org.lwjgl.opengl.GL.createCapabilities;
+import static org.lwjgl.opengl.GL.*;
 import static org.lwjgl.opengl.GL11.*;
 
 public class Display {
@@ -19,12 +19,8 @@ public class Display {
     private int visible = GL_TRUE;
     private List<VBORender> vboRenders;
 
-    private Thread loopThread;
-
     public Display() {
         paint();
-
-        loopThread = new Thread(this::loop);
     }
 
     private void paint() {
@@ -51,27 +47,29 @@ public class Display {
                 (vidMode.width() - width) / 2,
                 (vidMode.height() - height) / 2
         );
-    }
 
-    private void loop() {
         glfwMakeContextCurrent(window);
 
         createCapabilities();
+    }
 
+    /*
+        We need to make this the final method to be called after defining everything about the window.
+        This is due to the fact that concurrency with lwjgl's contexts is a little janky.
+     */
+    public void run() {
         glClearColor(0.19f, 0.03f, 0.15f, 0f);
 
         while (!glfwWindowShouldClose(window)) {
             glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 
-            glLoadIdentity();
-
             for (VBORender vboRender : vboRenders) {
                 vboRender.draw();
             }
 
-            glfwSwapBuffers(window);
-
             glfwPollEvents();
+
+            glfwSwapBuffers(window);
         }
 
         for (VBORender vboRender : vboRenders) {
@@ -84,7 +82,6 @@ public class Display {
 
 
     /* GETTERS AND SETTERS */
-
 
 
     public long getWindow() {
@@ -153,9 +150,5 @@ public class Display {
 
     public void addVboRender(VBORender vboRender) {
         vboRenders.add(vboRender);
-    }
-
-    public Thread getLoopThread() {
-        return loopThread;
     }
 }

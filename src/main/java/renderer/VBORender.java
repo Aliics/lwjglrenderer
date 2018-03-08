@@ -4,6 +4,8 @@ import org.lwjgl.BufferUtils;
 
 import java.nio.FloatBuffer;
 
+import static org.lwjgl.glfw.GLFW.glfwMakeContextCurrent;
+import static org.lwjgl.opengl.GL.createCapabilities;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL15.*;
 import static org.lwjgl.opengl.GL20.*;
@@ -39,7 +41,7 @@ public class VBORender {
         glBindVertexArray(vao);
         glEnableVertexAttribArray(0);
 
-        glDrawArrays(GL_TRIANGLES, 0,  vertices);
+        glDrawArrays(GL_TRIANGLES, 0, vertices);
 
         glDisableVertexAttribArray(0);
         glBindVertexArray(0);
