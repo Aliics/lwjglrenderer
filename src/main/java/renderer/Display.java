@@ -57,7 +57,7 @@ public class Display {
         We need to make this the final method to be called after defining everything about the window.
         This is due to the fact that concurrency with lwjgl's contexts is a little janky.
      */
-    public void run() {
+    public void launch() {
         glClearColor(0.19f, 0.03f, 0.15f, 0f);
 
         while (!glfwWindowShouldClose(window)) {

@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="da5d61b2-ffc7-458c-89a1-cac03c9a55d8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid7107.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/VBORender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/VBORender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/renderer/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/renderer/Display.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/renderer/VBORender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/renderer/VBORender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/renderer/DisplayTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/renderer/DisplayTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,7 +23,7 @@
               <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="300">
-                    <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+                    <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
                     <folding>
                       <element signature="imports" expanded="true" />
                     </folding>
@@ -47,8 +41,8 @@
       <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="435">
+              <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#500#501#0" expanded="true" />
@@ -226,7 +220,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -238,6 +232,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -384,12 +381,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.08 at 20h 59m 01s.xml">
-      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.08 at 21h 00m 17s.xml">
-      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="DisplayTest_DisplayTest1 - 2018.03.08 at 21h 00m 22s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
@@ -414,6 +405,12 @@
     <history-entry file="DisplayTest_DisplayTest1 - 2018.03.08 at 21h 02m 31s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 05h 43m 11s.xml">
+      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 05h 44m 35s.xml">
+      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1146" y="51" width="1276" height="943" extended-state="0" />
@@ -421,6 +418,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32881773" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -444,7 +442,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32881773" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -756,24 +753,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="300">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="435">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -835,6 +832,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -854,7 +852,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.lwjgl:lwjgl:3.0.0a</last-edited>
+          <last-edited>Maven: com.beust:jcommander:1.72</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

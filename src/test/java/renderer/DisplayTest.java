@@ -18,7 +18,7 @@ public class DisplayTest {
                 0.5f, -0.5f, 0
         }));
 
-        display.run();
+        display.launch();
 
         // we only need the below so the test won't quit out
 
