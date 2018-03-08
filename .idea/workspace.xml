@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da5d61b2-ffc7-458c-89a1-cac03c9a55d8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Heart.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/VBORender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/VBORender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,12 +22,12 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <leaf>
             <file leaf-file-name="DisplayTest.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="300">
-                    <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+                  <state relative-caret-position="255">
+                    <caret line="17" selection-start-line="17" selection-end-line="17" />
                     <folding>
                       <element signature="imports" expanded="true" />
                     </folding>
@@ -38,11 +42,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+            <state relative-caret-position="630">
+              <caret line="66" column="33" lean-forward="true" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#500#501#0" expanded="true" />
@@ -52,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Thread.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Thread.class">
+      <file leaf-file-name="Heart.obj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Heart.obj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3225">
-              <caret line="215" selection-start-line="215" selection-end-line="215" />
+            <state relative-caret-position="210">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -64,8 +80,8 @@
       <file leaf-file-name="VBORender.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="210">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,9 +131,11 @@
         <option value="$PROJECT_DIR$/src/test/java/renderer/ProgramTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/renderer/Input.java" />
         <option value="$PROJECT_DIR$/src/main/java/renderer/Model.java" />
-        <option value="$PROJECT_DIR$/src/main/java/renderer/VBORender.java" />
         <option value="$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/renderer/VBORender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/renderer/Display.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/Heart.obj" />
       </list>
     </option>
   </component>
@@ -185,7 +203,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lwjglrenderer" type="b2602c69:ProjectViewProjectNode" />
@@ -207,6 +225,13 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="renderer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lwjglrenderer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lwjglrenderer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,6 +253,9 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="renderer" />
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -381,34 +409,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.08 at 21h 00m 22s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 06h 56m 42s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.08 at 21h 00m 25s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 06h 57m 20s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.08 at 21h 01m 08s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 06h 58m 32s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.08 at 21h 01m 10s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 06h 58m 43s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.08 at 21h 01m 15s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 06h 58m 59s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.08 at 21h 01m 29s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 06h 59m 13s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.08 at 21h 02m 09s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 00m 02s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.08 at 21h 02m 31s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 00m 18s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 05h 43m 11s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 00m 33s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 05h 44m 35s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 01m 04s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -424,12 +452,13 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3292683" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32881773" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32881773" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.33004925" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2813008" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32881773" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -441,7 +470,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -451,13 +479,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java</url>
+          <line>17</line>
           <properties />
-          <option name="timeStamp" value="40" />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/Parser.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="43" />
+      <option name="time" value="56" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -745,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        <state relative-caret-position="210">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -755,8 +789,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -765,13 +809,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+        <state relative-caret-position="630">
+          <caret line="66" column="33" lean-forward="true" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#523#524#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Heart.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -77,6 +77,7 @@ public class Display {
         }
 
         glfwTerminate();
+        System.exit(0);
     }
 
 

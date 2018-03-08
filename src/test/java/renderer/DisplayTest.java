@@ -1,6 +1,7 @@
 package renderer;
 
 import org.testng.annotations.Test;
+import utils.Parser;
 
 import static org.lwjgl.glfw.GLFW.glfwWindowShouldClose;
 
@@ -8,15 +9,13 @@ public class DisplayTest {
 
     @Test
     public void DisplayTest1() {
+        float[] vertices = Parser.objTris("/home/aliics/IdeaProjects/fish.eyebrow/lwjglrenderer/src/test/resources/Heart.obj");
+
         Display display = new Display();
 
         display.setTitle("LWJGL ENGINE WINDOW");
 
-        display.addVboRender(new VBORender(new float[] {
-                -0.5f, 0.5f, 0,
-                0.5f, 0.5f, 0,
-                0.5f, -0.5f, 0
-        }));
+        display.addVboRender(new VBORender(vertices));
 
         display.launch();
 
