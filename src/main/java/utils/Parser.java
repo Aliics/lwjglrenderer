@@ -15,7 +15,6 @@ public class Parser {
             List<String> verticeStrings = new ArrayList<>();
 
             String line;
-            int currentFace = 0;
             while ((line = bufferedReader.readLine()) != null) {
                 String[] lineSplit = line.split("\\s");
 
@@ -25,10 +24,10 @@ public class Parser {
                         break;
                     case "f":
                         for (int i = 1; i < lineSplit.length; i++) {
-                            int currentVertice = Integer.valueOf(String.valueOf(lineSplit[i].charAt(0))) - 1;
-                            verticesList.add(verticeStrings.get(currentVertice));
+                            String[] vertexSplit = lineSplit[i].split("//");
+                            int currentVertex = Integer.valueOf(String.valueOf(vertexSplit[0])) - 1;
+                            verticesList.add(verticeStrings.get(currentVertex));
                         }
-                        currentFace++;
                         break;
                 }
             }
@@ -36,8 +35,8 @@ public class Parser {
             vertices = new float[verticesList.size() * 3];
 
             int currentVertex = 0;
-            for (String verticeString : verticesList) {
-                String[] splitVertices = verticeString.split("\\s");
+            for (String vertexString : verticesList) {
+                String[] splitVertices = vertexString.split("\\s");
 
                 for (int v = 1; v < splitVertices.length; v++) {
                     vertices[currentVertex] = Float.valueOf(splitVertices[v]);

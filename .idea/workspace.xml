@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da5d61b2-ffc7-458c-89a1-cac03c9a55d8" name="Default" comment="" />
+    <list default="true" id="da5d61b2-ffc7-458c-89a1-cac03c9a55d8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Parser.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,35 +16,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="DisplayTest.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="255">
-                    <caret line="17" selection-start-line="17" selection-end-line="17" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Parser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="42" column="73" lean-forward="true" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
+            <state relative-caret-position="148">
+              <caret line="27" column="100" selection-start-line="27" selection-start-column="100" selection-end-line="27" selection-end-column="100" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,12 +33,13 @@
       <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="15">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#500#501#0" expanded="true" />
                 <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#1996#2064#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,8 +48,8 @@
       <file leaf-file-name="Heart.obj" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/Heart.obj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+            <state relative-caret-position="315">
+              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -73,7 +57,7 @@
       <file leaf-file-name="VBORender.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="105">
               <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -126,9 +110,9 @@
         <option value="$PROJECT_DIR$/src/main/java/renderer/Model.java" />
         <option value="$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/renderer/VBORender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/renderer/Display.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Heart.obj" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Parser.java" />
       </list>
     </option>
   </component>
@@ -151,8 +135,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1146" />
-    <option name="y" value="51" />
+    <option name="x" value="1252" />
+    <option name="y" value="56" />
     <option name="width" value="1276" />
     <option name="height" value="943" />
   </component>
@@ -162,9 +146,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,6 +173,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lwjglrenderer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lwjglrenderer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="renderer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lwjglrenderer" type="b2602c69:ProjectViewProjectNode" />
@@ -402,39 +394,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 01m 04s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 15m 59s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 01m 46s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 16m 12s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 02m 00s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 17m 28s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 02m 52s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 17m 41s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 03m 10s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 17m 48s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 03m 42s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 17m 56s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 04m 26s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 18m 09s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 04m 36s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 19m 31s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 04m 51s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 20m 31s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.09 at 07h 04m 57s.xml">
+    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 21m 42s.xml">
       <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1146" y="51" width="1276" height="943" extended-state="0" />
+    <frame x="1252" y="56" width="1276" height="943" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -444,24 +437,24 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3292683" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32881773" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33004925" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32881773" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32923833" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2813008" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32881773" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29593495" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39901477" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39901477" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32881773" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -469,18 +462,64 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="56" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="68" lean-forward="true" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#1996#2064#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Heart.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
@@ -489,6 +528,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#1996#2064#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -532,6 +572,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#1996#2064#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -568,6 +609,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#1996#2064#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,6 +646,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#1996#2064#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -640,6 +683,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#1996#2064#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -676,6 +720,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#1996#2064#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -702,6 +747,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#1996#2064#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -765,8 +811,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="105">
           <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -775,37 +831,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="15">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#1996#2064#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Heart.obj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="42" column="73" lean-forward="true" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
+        <state relative-caret-position="148">
+          <caret line="27" column="100" selection-start-line="27" selection-start-column="100" selection-end-line="27" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

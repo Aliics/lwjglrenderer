@@ -82,7 +82,7 @@ public class Display {
 
 
 
-    /* GETTERS AND SETTERS */
+    // <editor-fold desc="getters-and-setters" defaultstate="collapsed">
 
 
     public long getWindow() {
@@ -152,4 +152,6 @@ public class Display {
     public void addVboRender(VBORender vboRender) {
         vboRenders.add(vboRender);
     }
+
+    // </editor-fold>
 }
