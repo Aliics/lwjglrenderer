@@ -12,7 +12,7 @@ public class Parser {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
 
             List<String> verticesList = new ArrayList<>();
-            List<String> verticeStrings = new ArrayList<>();
+            List<String> vertexStrings = new ArrayList<>();
 
             String line;
             while ((line = bufferedReader.readLine()) != null) {
@@ -20,13 +20,13 @@ public class Parser {
 
                 switch (lineSplit[0]) {
                     case "v":
-                        verticeStrings.add(line);
+                        vertexStrings.add(line);
                         break;
                     case "f":
                         for (int i = 1; i < lineSplit.length; i++) {
                             String[] vertexSplit = lineSplit[i].split("//");
                             int currentVertex = Integer.valueOf(String.valueOf(vertexSplit[0])) - 1;
-                            verticesList.add(verticeStrings.get(currentVertex));
+                            verticesList.add(vertexStrings.get(currentVertex));
                         }
                         break;
                 }

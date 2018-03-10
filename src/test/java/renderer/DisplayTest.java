@@ -9,7 +9,7 @@ public class DisplayTest {
 
     @Test
     public void DisplayTest1() {
-        float[] vertices = Parser.objTris("/home/aliics/IdeaProjects/fish.eyebrow/lwjglrenderer/src/test/resources/Heart.obj");
+        float[] vertices = Parser.objTris("/home/aliics/IdeaProjects/fish.eyebrow/lwjglrenderer/src/test/resources/SwordTest.obj");
 
         Display display = new Display();
 

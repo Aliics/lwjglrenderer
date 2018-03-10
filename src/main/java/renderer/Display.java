@@ -51,6 +51,8 @@ public class Display {
         glfwMakeContextCurrent(window);
 
         createCapabilities();
+
+        Input.setup(window);
     }
 
     /*
@@ -67,7 +69,7 @@ public class Display {
                 vboRender.draw();
             }
 
-            glfwPollEvents();
+            Input.pollEvents();
 
             glfwSwapBuffers(window);
         }
@@ -81,8 +83,7 @@ public class Display {
     }
 
 
-
-    // <editor-fold desc="getters-and-setters" defaultstate="collapsed">
+    // <editor-fold desc="getters-and-setters">
 
 
     public long getWindow() {
