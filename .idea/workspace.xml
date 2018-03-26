@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da5d61b2-ffc7-458c-89a1-cac03c9a55d8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/SwordTest.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/render/Display.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/render/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/render/DisplayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/display_properties.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Model.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/renderer/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/renderer/Display.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/renderer/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/renderer/Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/renderer/Model.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/renderer/DisplayTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/renderer/DisplayTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Display.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Input.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/VBORender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Heart.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/SwordTest.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/renderer/Display.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/renderer/Input$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/renderer/Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/renderer/VBORender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/Parser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Heart.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SwordTest.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/renderer/DisplayTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,77 +32,82 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/lwjglrenderer$DisplayTest.ic" NAME="DisplayTest Coverage Results" MODIFIED="1521358530079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>render.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="DisplayTest.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/test/java/render/DisplayTest.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="255">
+                    <caret line="17" column="80" lean-forward="true" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                      <element signature="e#370#393#0" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/java/render/Model.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="315">
+                    <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                      <element signature="n#!!doc;n#getVertices#0;n#Model#0" />
+                      <element signature="e#1492#1493#0" expanded="true" />
+                      <element signature="e#1526#1527#0" expanded="true" />
+                      <element signature="e#1577#1578#0" expanded="true" />
+                      <element signature="e#1623#1624#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Parser.java">
+      <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/render/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1827#1873#0" />
+                <element signature="e#3002#3003#0" expanded="true" />
+                <element signature="e#3036#3037#0" expanded="true" />
+                <element signature="e#3089#3090#0" expanded="true" />
+                <element signature="e#3108#3109#0" expanded="true" />
+                <element signature="e#3550#3551#0" expanded="true" />
+                <element signature="e#3585#3586#0" expanded="true" />
+                <element signature="e#3630#3631#0" expanded="true" />
+                <element signature="e#3676#3677#0" expanded="true" />
+                <element signature="e#3716#3717#0" expanded="true" />
+                <element signature="e#3756#3757#0" expanded="true" />
+                <element signature="e#2715#2751#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisplayTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java">
+      <file leaf-file-name="display_properties.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/display_properties.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="124" selection-start-line="11" selection-start-column="124" selection-end-line="11" selection-end-column="124" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SwordTest.obj" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/SwordTest.obj">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#2028#2071#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VBORender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Input.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#275#617#0" expanded="true" />
-                <element signature="e#616#617#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#706#746#0" />
-              </folding>
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -104,6 +117,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="GLSL Shader" />
         <option value="TestNG Test Class" />
         <option value="Class" />
       </list>
@@ -121,13 +135,29 @@
         <option value="$PROJECT_DIR$/src/test/java/renderer/DisplayTest.groovy" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/renderer/ProgramTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/renderer/VBORender.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Heart.obj" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/renderer/Model.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/renderer/Display.java" />
         <option value="$PROJECT_DIR$/src/main/java/renderer/Input.java" />
-        <option value="$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/renderer/VBORender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/renderer/shaders/vertex.glsl" />
+        <option value="$PROJECT_DIR$/src/main/java/renderer/shaders/fragment.glsl" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/render/Window.java" />
+        <option value="$PROJECT_DIR$/src/main/java/render/Shader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/render/shaders/VertexShader.glsl" />
+        <option value="$PROJECT_DIR$/src/main/java/render/shaders/FragmentShader.glsl" />
+        <option value="$PROJECT_DIR$/src/main/java/MainEntryPoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/render/Texture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/render/Vector3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Display.java" />
+        <option value="$PROJECT_DIR$/src/test/java/render/DisplayTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/render/Model.java" />
+        <option value="$PROJECT_DIR$/src/main/java/render/Display.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/display_properties.properties" />
       </list>
     </option>
   </component>
@@ -149,10 +179,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="y" value="24" />
-    <option name="width" value="1280" />
-    <option name="height" value="1023" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1122" />
+    <option name="y" value="70" />
+    <option name="width" value="1416" />
+    <option name="height" value="919" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -194,15 +225,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lwjglrenderer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lwjglrenderer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="render" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lwjglrenderer" type="b2602c69:ProjectViewProjectNode" />
@@ -223,7 +246,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
+              <item name="render" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lwjglrenderer" type="b2602c69:ProjectViewProjectNode" />
@@ -240,6 +263,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/aliics/IdeaProjects/fish.eyebrow/lwjglrenderer/src/test/java/renderer/DisplayTest.java" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
@@ -247,21 +271,26 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="render" />
       <recent name="renderer" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -276,43 +305,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.DisplayTest.DisplayTest1">
-    <configuration name="ProgramTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="renderer.ProgramTest" />
+  <component name="RunManager" selected="TestNG.DisplayTest">
+    <configuration name="Unnamed" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="MainEntryPoint" />
       <module name="lwjglrenderer" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="renderer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="DisplayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lwjglrenderer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="renderer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.DisplayTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -330,32 +330,61 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="DisplayTest.DisplayTest1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DisplayTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lwjglrenderer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="renderer.*" />
+          <option name="PATTERN" value="render.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.DisplayTest" />
-      <option name="METHOD_NAME" value="DisplayTest1" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="render" />
+      <option name="MAIN_CLASS_NAME" value="render.DisplayTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
+        <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="DisplayTest.PrimaryLaunchTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lwjglrenderer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="render.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="render" />
+      <option name="MAIN_CLASS_NAME" value="render.DisplayTest" />
+      <option name="METHOD_NAME" value="PrimaryLaunchTest" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
     </configuration>
@@ -382,15 +411,14 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.DisplayTest" />
-      <item itemvalue="TestNG.DisplayTest.DisplayTest1" />
-      <item itemvalue="Application.ProgramTest" />
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="TestNG.DisplayTest.PrimaryLaunchTest" />
+      <item itemvalue="TestNG.DisplayTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DisplayTest.DisplayTest1" />
-        <item itemvalue="Application.ProgramTest" />
-        <item itemvalue="JUnit.DisplayTest" />
+        <item itemvalue="TestNG.DisplayTest" />
+        <item itemvalue="TestNG.DisplayTest.PrimaryLaunchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -408,62 +436,72 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 20m 31s.xml">
-      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
+    <history-entry file="DisplayTest - 2018.03.27 at 06h 53m 05s.xml">
+      <configuration name="DisplayTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 21m 42s.xml">
-      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
+    <history-entry file="DisplayTest - 2018.03.27 at 06h 54m 30s.xml">
+      <configuration name="DisplayTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 29m 03s.xml">
-      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
+    <history-entry file="DisplayTest - 2018.03.27 at 06h 54m 51s.xml">
+      <configuration name="DisplayTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 15h 36m 13s.xml">
-      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
+    <history-entry file="DisplayTest - 2018.03.27 at 06h 58m 50s.xml">
+      <configuration name="DisplayTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 16h 44m 01s.xml">
-      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
+    <history-entry file="DisplayTest - 2018.03.27 at 07h 05m 04s.xml">
+      <configuration name="DisplayTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 16h 50m 26s.xml">
-      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
+    <history-entry file="DisplayTest - 2018.03.27 at 07h 05m 29s.xml">
+      <configuration name="DisplayTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 16h 51m 24s.xml">
-      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
+    <history-entry file="DisplayTest - 2018.03.27 at 07h 06m 54s.xml">
+      <configuration name="DisplayTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 16h 57m 51s.xml">
-      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
+    <history-entry file="DisplayTest - 2018.03.27 at 07h 07m 16s.xml">
+      <configuration name="DisplayTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 19h 56m 27s.xml">
-      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
+    <history-entry file="DisplayTest - 2018.03.27 at 07h 07m 26s.xml">
+      <configuration name="DisplayTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DisplayTest_DisplayTest1 - 2018.03.10 at 19h 58m 09s.xml">
-      <configuration name="DisplayTest.DisplayTest1" configurationId="TestNG" />
+    <history-entry file="DisplayTest - 2018.03.27 at 07h 07m 51s.xml">
+      <configuration name="DisplayTest" configurationId="TestNG" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1280" height="1023" extended-state="4" />
+    <frame x="1122" y="70" width="1416" height="919" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32881773" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32881773" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32847533" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3292683" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32847533" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32881773" />
+      <window_info anchor="bottom" x="1006" y="656" width="687" height="244" id="Run" order="2" type="WINDOWED" weight="0.30964467" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.317734" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2949757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27226278" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39901477" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39720812" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32984716" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -476,266 +514,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="56" />
+      <option name="time" value="92" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#2028#2071#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Thread.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3225">
-          <caret line="215" selection-start-line="215" selection-end-line="215" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#2028#2071#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#2028#2071#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#2028#2071#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#2028#2071#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#2028#2071#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#2028#2071#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Model.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
@@ -779,36 +570,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Heart.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding>
-            <element signature="e#109#110#0" expanded="true" />
-            <element signature="e#141#142#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Heart.obj" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Model.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-glfw/3.1.0/lwjgl-glfw-3.1.0.jar!/org/lwjgl/glfw/GLFWKeyCallbackI.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -823,59 +586,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#2028#2071#0" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2-sources.jar!/org/testng/annotations/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Input.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Parser.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Block.mtl" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Block.obj" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/VBORender.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/shaders/fragment.glsl" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/shaders/vertex.glsl" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/renderer/Display.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/render/Window.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-opengl/3.1.0/lwjgl-opengl-3.1.0.jar!/org/lwjgl/opengl/GL11.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="4046" column="23" selection-start-line="4046" selection-start-column="23" selection-end-line="4046" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/render/shaders/VertexShader.glsl" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/render/Shader.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/render/shaders/FragmentShader.glsl" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainEntryPoint.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/render/Texture.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/render/Vector3.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/render/Display.java" />
+    <entry file="file://$PROJECT_DIR$/hs_err_pid30559.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/render/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#275#617#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#706#746#0" />
+            <element signature="n#!!doc;n#getVertices#0;n#Model#0" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1577#1578#0" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Parser.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/render/DisplayTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+          <caret line="17" column="80" lean-forward="true" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#370#393#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/renderer/DisplayTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/display_properties.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="124" selection-start-line="11" selection-start-column="124" selection-end-line="11" selection-end-column="124" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/SwordTest.obj">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="LargeFileEditor">
-        <state relative-caret-position="437">
-          <caret line="42645" column="28" lean-forward="true" selection-start-line="42645" selection-start-column="28" selection-end-line="42645" selection-end-column="28" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/render/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1827#1873#0" />
+            <element signature="e#3002#3003#0" expanded="true" />
+            <element signature="e#3036#3037#0" expanded="true" />
+            <element signature="e#3089#3090#0" expanded="true" />
+            <element signature="e#3108#3109#0" expanded="true" />
+            <element signature="e#3550#3551#0" expanded="true" />
+            <element signature="e#3585#3586#0" expanded="true" />
+            <element signature="e#3630#3631#0" expanded="true" />
+            <element signature="e#3676#3677#0" expanded="true" />
+            <element signature="e#3716#3717#0" expanded="true" />
+            <element signature="e#3756#3757#0" expanded="true" />
+            <element signature="e#2715#2751#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -957,6 +760,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Maven: com.beust:jcommander:1.72</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
