@@ -1,6 +1,7 @@
 package render;
 
 import org.lwjgl.BufferUtils;
+import render.utils.Vector3;
 
 import java.nio.FloatBuffer;
 
@@ -11,39 +12,55 @@ import static org.lwjgl.opengl.GL30.*;
 
 public class Model {
     private float[] vertices;
-    private int vao_id;
-    private int vbo_id;
+    private int vaoId;
+    private int vboId;
 
-    private int render_mode = GL_TRIANGLES;
+    private int renderMode = GL_TRIANGLES;
+    private int matrixSize = 3;
+
+    private String name = "Model";
+    private Vector3 position = Vector3.VECTOR3_ZERO;
+    private Vector3 rotation = Vector3.VECTOR3_ZERO;
+    private Vector3 scale = Vector3.VECTOR3_ONE;
 
     public Model(float[] vertices) {
         this.vertices = vertices;
     }
 
     void load() {
-        FloatBuffer vertexBuffer = BufferUtils.createFloatBuffer(vertices.length);
-        vertexBuffer.put(vertices);
-        vertexBuffer.flip();
+        for (int vertex = 0; vertex < vertices.length; vertex += 3) {
+            vertices[vertex] = (vertices[vertex] * scale.getX()) + position.getX();
+            vertices[vertex + 1] = (vertices[vertex + 1] * scale.getY()) + position.getY();
+            vertices[vertex + 2] = (vertices[vertex + 2] * scale.getZ()) + position.getZ();
+        }
 
-        vao_id = glGenVertexArrays();
-        glBindVertexArray(vao_id);
+        try {
+            FloatBuffer vertexBuffer = BufferUtils.createFloatBuffer(vertices.length);
+            vertexBuffer.put(vertices);
+            vertexBuffer.flip();
 
-        vbo_id = glGenBuffers();
-        glBindBuffer(GL_ARRAY_BUFFER, vbo_id);
-        glBufferData(GL_ARRAY_BUFFER, vertexBuffer, GL_STATIC_DRAW);
+            vaoId = glGenVertexArrays();
+            glBindVertexArray(vaoId);
 
-        glVertexAttribPointer(0, 3, GL_FLOAT, false, 0, 0);
+            vboId = glGenBuffers();
+            glBindBuffer(GL_ARRAY_BUFFER, vboId);
+            glBufferData(GL_ARRAY_BUFFER, vertexBuffer, GL_STATIC_DRAW);
 
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
+            glVertexAttribPointer(0, matrixSize, GL_FLOAT, false, 0, 0);
 
-        glBindVertexArray(0);
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+            glBindVertexArray(0);
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
     }
 
     void render() {
-        glBindVertexArray(vao_id);
+        glBindVertexArray(vaoId);
         glEnableVertexAttribArray(0);
 
-        glDrawArrays(render_mode, 0, vertices.length);
+        glDrawArrays(renderMode, 0, vertices.length);
 
         glDisableVertexAttribArray(0);
         glBindVertexArray(0);
@@ -53,23 +70,61 @@ public class Model {
         glDisableVertexAttribArray(0);
 
         glBindBuffer(GL_ARRAY_BUFFER, 0);
-        glDeleteBuffers(vbo_id);
+        glDeleteBuffers(vboId);
 
         glBindVertexArray(0);
-        glDeleteVertexArrays(vao_id);
+        glDeleteVertexArrays(vaoId);
     }
 
-//    <editor-fold desc="getters and setters">
     public float[] getVertices() {
         return vertices;
     }
 
     public int getRenderMode() {
-        return render_mode;
+        return renderMode;
     }
 
     public void setRenderMode(int renderMode) {
-        this.render_mode = renderMode;
+        this.renderMode = renderMode;
     }
-//    </editor-fold>
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getMatrixSize() {
+        return matrixSize;
+    }
+
+    public void setMatrixSize(int matrixSize) {
+        this.matrixSize = matrixSize;
+    }
+
+    public Vector3 getPosition() {
+        return position;
+    }
+
+    public void setPosition(Vector3 position) {
+        this.position = position;
+    }
+
+    public Vector3 getRotation() {
+        return rotation;
+    }
+
+    public void setRotation(Vector3 rotation) {
+        this.rotation = rotation;
+    }
+
+    public Vector3 getScale() {
+        return scale;
+    }
+
+    public void setScale(Vector3 scale) {
+        this.scale = scale;
+    }
 }

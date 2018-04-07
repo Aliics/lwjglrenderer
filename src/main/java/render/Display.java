@@ -1,6 +1,9 @@
 package render;
 
+import org.lwjgl.glfw.GLFWWindowSizeCallback;
+
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,101 +15,129 @@ import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
 public class Display {
-    private Thread main_thread;
-    private long main_thread_id;
+    public static final int VBO_RENDER_MODE = 0;
+    public static final int IMMEDIATE_RENDER_MODE = 1;
 
-    private long w_id;
+    private Thread mainThread;
+    private long mainThreadId;
 
-    private int w_width = 600;
-    private int w_height = 480;
+    private long window;
 
-    private String w_title = "Window";
+    private int width = 600;
+    private int height = 480;
+    private String title = "Window";
+    private int renderMode = VBO_RENDER_MODE;
 
-    private long w_monitor = 0;
+    private long monitor = 0;
 
-    private int render_mode = IMMEDIATE_RENDER_MODE;
+    private String pathToSave = null;
 
-    private List<Model> model_renders;
+    private List<Model> modelRenders;
 
-    private List<Model> models_to_add;
+    private List<Model> modelsToAdd;
 
     public Display() {
         init();
 
-        main_thread = new Thread(this::loop);
-        main_thread.start();
+        mainThread = new Thread(this::loop);
+        mainThread.start();
 
-        main_thread_id = main_thread.getId();
+        mainThreadId = mainThread.getId();
 
-        model_renders = new ArrayList<>();
-        models_to_add = new ArrayList<>();
+        modelRenders = new ArrayList<>();
+        modelsToAdd = new ArrayList<>();
     }
 
     private void init() {
         if (!glfwInit()) return;
 
-        w_id = glfwCreateWindow(w_width, w_height, w_title, w_monitor, 0);
+        window = glfwCreateWindow(width, height, title, monitor, 0);
 
-        if (w_id == NULL) return;
+        if (window == NULL) return;
 
-        glfwShowWindow(w_id);
+        glfwShowWindow(window);
     }
 
     private void loop() {
-        glfwMakeContextCurrent(w_id);
+        glfwMakeContextCurrent(window);
         createCapabilities();
 
         glClearColor(0.25f, 0.1f, 0.15f, 0);
 
-        while (!glfwWindowShouldClose(w_id)) {
+        glfwSetWindowSizeCallback(window, new GLFWWindowSizeCallback() {
+            @Override
+            public void invoke(long window, int width, int height) {
+                Display.this.width = width;
+                Display.this.height = height;
+            }
+        });
+
+        while (!glfwWindowShouldClose(window)) {
             glfwPollEvents();
 
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-            if (!models_to_add.isEmpty()) {
-                model_renders.addAll(models_to_add);
+            if (!modelsToAdd.isEmpty()) {
+                modelRenders.addAll(modelsToAdd);
 
-                for (Model model : model_renders) {
+                for (Model model : modelRenders) {
                     model.load();
                 }
 
-                models_to_add.clear();
+                modelsToAdd.clear();
             }
 
-            switch (render_mode) {
+            switch (renderMode) {
+                case VBO_RENDER_MODE:
+                    for (Model model : modelRenders) {
+                        model.render();
+                    }
+
+                    break;
+
                 case IMMEDIATE_RENDER_MODE:
-                    for (Model model : model_renders) {
+                    for (Model model : modelRenders) {
                         float[] vertices = model.getVertices();
 
                         glBegin(GL_TRIANGLES);
 
-                        for (int i = 0; i < vertices.length; i+=3) {
-                            glVertex3f(vertices[i], vertices[i + 1], vertices[i + 2]);
+                        for (int vertex = 0; vertex < vertices.length; vertex += 3) {
+                            glVertex3f(vertices[vertex], vertices[vertex + 1], vertices[vertex + 2]);
                         }
 
                         glEnd();
                     }
 
                     break;
-                case VBO_RENDER_MODE:
-                    for (Model model : model_renders) {
-                        model.render();
-                    }
-
-                    break;
             }
 
-            glfwSwapBuffers(w_id);
+            glfwSwapBuffers(window);
         }
 
-        for (Model model : model_renders) {
+        for (Model model : modelRenders) {
             model.destroy();
+        }
+
+        if (pathToSave != null) {
+            Properties properties = new Properties();
+            try {
+                properties.load(new FileReader(pathToSave));
+
+                properties.setProperty("width", String.valueOf(width));
+                properties.setProperty("height", String.valueOf(height));
+                properties.setProperty("title", title);
+                properties.setProperty("render_mode", String.valueOf(renderMode));
+
+                properties.store(new FileWriter(pathToSave), "SETTINGS WERE SAVED ON PROGRAM CLOSE");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
         glfwTerminate();
     }
 
-    public void setFromPropertiesFile(String path) {
+    public void setSettingsToPropertiesFile(String path) {
         Properties properties = new Properties();
         try {
             properties.load(new FileReader(path));
@@ -120,76 +151,79 @@ public class Display {
         }
     }
 
-//    <editor-fold desc="getters and setters">
+    public void saveToPropertiesOnClose(String path) {
+        pathToSave = path;
+    }
+
     public Thread getLoopThread() {
-        return main_thread;
+        return mainThread;
     }
 
     public long getLoopThreadId() {
-        return main_thread_id;
+        return mainThreadId;
     }
 
     public long getWindow() {
-        return w_id;
+        return window;
     }
 
     public int getWidth() {
-        return w_width;
+        return width;
     }
 
     public void setWidth(int width) {
-        w_width = width;
+        this.width = width;
 
-        glfwSetWindowSize(w_id, w_width, w_height);
+        glfwSetWindowSize(window, this.width, height);
     }
 
     public int getHeight() {
-        return w_height;
+        return height;
     }
 
     public void setHeight(int height) {
-        w_height = height;
+        this.height = height;
 
-        glfwSetWindowSize(w_id, w_width, w_height);
+        glfwSetWindowSize(window, width, this.height);
     }
 
     public String getTitle() {
-        return w_title;
+        return title;
     }
 
     public void setTitle(String title) {
-        w_title = title;
+        this.title = title;
 
-        glfwSetWindowTitle(w_id, title);
+        glfwSetWindowTitle(window, title);
     }
 
     public long getMonitor() {
-        return w_monitor;
+        return monitor;
     }
 
     public int getRenderMode() {
-        return render_mode;
+        return renderMode;
     }
 
     public void setRenderMode(int renderMode) {
-        render_mode = renderMode;
+        this.renderMode = renderMode;
     }
 
     public List<Model> getModels() {
-        return model_renders;
+        return modelRenders;
     }
 
     public Model getModel(int index) {
-        return model_renders.get(index);
+        return modelRenders.get(index);
     }
 
     public void addModel(Model model) {
-        models_to_add.add(model);
+        modelsToAdd.add(model);
     }
-//    </editor-fold>
 
-//    <editor-fold desc="constants">
-    public static final int IMMEDIATE_RENDER_MODE = 0;
-    public static final int VBO_RENDER_MODE = 1;
-//    </editor-fold>
+    public void addModels(Model[] models) {
+        for (Model model : models) {
+            addModel(model);
+        }
+    }
 }

@@ -2,29 +2,20 @@ package render;
 
 import org.testng.annotations.Test;
 
-import static org.lwjgl.glfw.GLFW.glfwWindowShouldClose;
-
 public class DisplayTest {
     @Test
     public void PrimaryTestCase() {
-        Model model = new Model(new float[] {
-                -0.5f, 0.5f, 0,
-                -0.5f, -0.5f, 0,
-                0.5f, -0.5f, 0,
-        });
-
         Display display = new Display();
 
-        display.setFromPropertiesFile("src/test/resources/display_properties.properties");
+        display.setSettingsToPropertiesFile("src/test/resources/display_props_test.properties");
+        display.saveToPropertiesOnClose("src/test/resources/display_props_test.properties");
 
-        display.setRenderMode(Display.VBO_RENDER_MODE);
+        Model[] models = Parser.loadFromXml("src/test/resources/test_save.xml");
 
-        display.addModel(model);
+        display.addModels(models);
 
-//        <editor-fold>
-        while (!glfwWindowShouldClose(display.getWindow())) {
+        while (true) {
             // this is here just to keep it alive :)
         }
-//        </editor-fold>
     }
 }
