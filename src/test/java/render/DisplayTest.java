@@ -1,6 +1,7 @@
 package render;
 
 import org.testng.annotations.Test;
+import render.utils.Parser;
 
 public class DisplayTest {
     @Test
